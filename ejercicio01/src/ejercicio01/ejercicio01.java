@@ -78,6 +78,7 @@ public class ejercicio01 {
 	                for (int i = 0; i < filas1; i++) {
 	                    for (int j = 0; j < columnas1; j++) {
 	                        boolean ocupado = false;
+	                        
 	                        for (int k = 0; k < asientosocupados; k++) {
 	                            if (ocupados[k] == matriz1[i][j]) {
 	                                ocupado = true;
@@ -95,7 +96,7 @@ public class ejercicio01 {
 	                System.out.println();
 	            }
 	        	
-	            System.out.println("¿Quiere otro asiento? 1=Cualquier numero 2=No");
+	            System.out.println("¿Quiere otro asiento? Si=Cualquier numero 2=No");
 	             exit = scanner.nextInt();
 	        }while(exit!=2);
 	        scanner.close();
